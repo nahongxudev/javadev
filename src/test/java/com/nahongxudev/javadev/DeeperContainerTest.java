@@ -1,4 +1,6 @@
-package com.nahongxudev.javadev.container.deeper;
+package com.nahongxudev.javadev;
+
+import org.junit.Test;
 
 import java.util.*;
 
@@ -6,9 +8,10 @@ import java.util.*;
  * Created by nahongxu on 2016/6/14.
  * Collections.nCopies : all the copies are the same reference!
  */
-public class DeeperContainer {
+public class DeeperContainerTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void testFillCollection() {
         Address address=new Address("wudaokou");
         System.out.println("address:"+address);
         List<Address> addressList=new ArrayList<Address>(Collections.nCopies(4,address));
